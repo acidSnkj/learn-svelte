@@ -1,7 +1,7 @@
 <script>
    let someText = `Frontend Developer AdMech`; 
    let count = 0;
-    let style = { darkMode: false };
+   let style = { darkMode: false };
    function addCount(){
       count++;
    }
@@ -25,5 +25,5 @@
     </p>
   {/if}
   <button on:click={addCount}>Click {count === 0 ? '' : count}</button>
-  <button on:click={toggleMode}>DarkMode</button>
+  <button on:click={toggleMode}>{style.darkMode ? 'DarkMode' : "LightMode"}</button>
 </div>
